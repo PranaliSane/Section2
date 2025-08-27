@@ -51,7 +51,7 @@ const handleSubmit = async (Event: FormEvent<HTMLFormElement>) => {
             <TextField name="title" label='Title' defaultValue={activity?.title}/>
             <TextField name="description" label='Description' defaultValue={activity?.description} multiline rows={3} />
             <TextField name="category" label='Category' defaultValue={activity?.category} />
-            <TextField name="dat" label='Date' type="date"
+            <TextField name="date" label='Date' type="date"
                 defaultValue={activity?.date 
                   ? new Date(activity.date).toISOString().split('T')[0]
                   : new Date().toISOString().split('T')[0]
